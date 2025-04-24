@@ -147,11 +147,11 @@ arcquad(x) = \frac{2x^2}{(2x - 1)^2 + 1}
 - Symmetric with respect to `x = 0.5`
 - Smooth, continuous, and monotonic for `x ∈ [0, 1]`
 
-![Arcquad](https://github.com/user-attachments/assets/8d83120d-a08f-453b-9f1c-7b2d86e9d9d5)
+![arcquad_plot](https://github.com/user-attachments/assets/e7e43c56-57d1-4796-8392-1711a65636e7)
 
-> **Figure 2 – Plot of the arcquad(x) function in [0, 1].**
-> This custom nonlinear function mimics arctangent behavior while being computationally cheaper.  
-> It saturates smoothly toward 1, with symmetric curvature centered at `x = 0.5`, and guarantees monotonicity and boundedness in [0, 1].
+> **Figure 1 – Plot of the arcquad(x) function in [0, 1].**  
+> This function approximates the behavior of `arctan(x)`, but maps smoothly into the [0, 1] interval.  
+> It introduces horizontal asymptotes and diminishing returns, enforcing stability and preventing parameter explosion during reinforcement.
 
 ---
 
@@ -166,7 +166,7 @@ This behavior strongly suggests the presence of an **internal homeostatic mechan
 
 Below is the average neuron activation rate over 1 million frames, recorded from a typical run with 256 neurons:
 
-![Figure_1](https://github.com/user-attachments/assets/66159b65-021c-4a6c-b7a8-37eef1cd0308)
+![Figure_2](https://github.com/user-attachments/assets/66159b65-021c-4a6c-b7a8-37eef1cd0308)
 
 > **Figure 1 – Average neural activity over time.**  
 > The system shows a high initial spike in activity, quickly followed by a drop to a lower, stable regime.  
