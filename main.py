@@ -50,7 +50,7 @@ renderer = Renderer(screen)
 
 # Simulazione
 running = True
-while running and stats["frame"] < stats["max_steps"]:
+while running and (stats["frame"] < stats["max_steps"] or stats["max_steps"] == 0):
     if stats["step_per_second"] > 0:
         clock.tick(stats["step_per_second"])         # FPS
     stats["firing_count"] = 0
